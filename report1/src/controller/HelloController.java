@@ -13,6 +13,7 @@ public class HelloController implements Controller {
     public ModelAndView handleRequest(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws Exception {
         ModelAndView mav = new ModelAndView("index.jsp");
         mav.addObject("message", "Hello Spring MVC");
+        mav.addObject("browser",httpServletRequest.getHeader("User-Agent"));
         return mav;
     }
 }
