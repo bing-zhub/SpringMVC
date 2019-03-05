@@ -1,0 +1,184 @@
+.banner-container {
+    position: relative;
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+.banner-items {
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 30px;
+}
+
+.banner-header {
+    margin-top: 30px;
+    width: 100%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+h1{
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.title {
+    font-size: 40px;
+    vertical-align: middle;
+}
+
+.banner-subtitle {
+    width: 100%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.subtitle {
+    margin: 0px 0 20px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.banner-details {
+    padding: 0 200px;
+    width: 100%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+}
+.detail-content {
+    width: 33.33333333%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+}
+
+.detail-desc {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 3.1px;
+}
+
+.detail-value {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2.8px;
+}
+
+.price {
+    top: -40px;
+    position: relative;
+    padding: 52px 100px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 20px 0 rgba(39,74,89,.2);
+    font-size: 18px;
+    color: #565656;
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.left-content {
+    text-align: left;
+    width: 40%;
+    display: inline-block;
+}
+
+.date-count-down {
+    position: absolute;
+    left: 30px;
+    top: 0;
+    padding: 3px 10px;
+    background: #f66;
+    color: #fff;
+    font-size: 14px;
+}
+
+.right-content {
+    text-align: right;
+    width: 60%;
+    display: inline-block;
+    float: right;
+    padding-top: 14px;
+}
+
+.enroll {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 16px 48px;
+    background: #f66;
+    border-radius: 56px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.more {
+    margin-left: 15px;
+    padding: 16px 58px;
+    border: 1px solid #f66;
+    border-radius: 56px;
+    font-size: 16px;
+    color: #f66;
+}
+
+.enroll:hover{
+    background-color: rgb(255, 67, 67);
+    color: #fff;
+}
+
+.course-info {
+    margin-top: -80px;
+    padding: 0 80px;
+    text-align: center;
+    font-size: 18px;
+    color: #565656;
+}
+
+.course-main {
+    padding: 80px 0;
+    margin: 0px 230px;
+    background: #45a3f8;
+}
+
+.feature {
+    width: 90%;
+    margin: 15px 50px;
+    padding: 16px 0;
+    border-radius: 8px;
+    background-color: #1e88e5;
+    color: white;
+    text-align: center;
+    box-shadow: 0 2px 20px 0 rgba(39,74,89,.2);
+}
+
+.feature:hover {
+    background: #2979ff;
+}
+
+.divider {
+    width: 1060px;
+    height: 24px;
+    margin: 0px 230px;
+    background: url(../images/divider.png)
+}

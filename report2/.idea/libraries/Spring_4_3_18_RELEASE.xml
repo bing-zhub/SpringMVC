@@ -1,0 +1,49 @@
+<component name="libraryTable">
+  <library name="Spring-4.3.18.RELEASE" type="spring">
+    <properties version="4.3.18.RELEASE" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/spring-instrument-4.3.18.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-instrument-tomcat-4.3.18.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-aspects-4.3.18.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-context-support-4.3.18.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-expression-4.3.18.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-aop-4.3.18.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-jms-4.3.18.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-beans-4.3.18.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-oxm-4.3.18.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-jdbc-4.3.18.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-messaging-4.3.18.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-tx-4.3.18.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/aopalliance-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-orm-4.3.18.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-context-4.3.18.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-core-4.3.18.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-test-4.3.18.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../tomcat/lib/annotations-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../tomcat/lib/catalina-ant.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../tomcat/lib/catalina-ha.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../tomcat/lib/catalina-storeconfig.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../tomcat/lib/catalina-tribes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../tomcat/lib/catalina.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../tomcat/lib/ecj-4.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../tomcat/lib/el-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../tomcat/lib/jasper-el.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../tomcat/lib/jasper.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../tomcat/lib/jaspic-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../tomcat/lib/jsp-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../tomcat/lib/servlet-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../tomcat/lib/tomcat-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../tomcat/lib/tomcat-coyote.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../tomcat/lib/tomcat-dbcp.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../tomcat/lib/tomcat-jdbc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../tomcat/lib/tomcat-jni.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../tomcat/lib/tomcat-util-scan.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../tomcat/lib/tomcat-util.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../tomcat/lib/tomcat-websocket.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../tomcat/lib/websocket-api.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

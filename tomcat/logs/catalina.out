@@ -1,0 +1,325 @@
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+26-Feb-2019 10:58:14.511 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.16
+26-Feb-2019 10:58:14.514 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Feb 4 2019 16:30:29 UTC
+26-Feb-2019 10:58:14.515 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.16.0
+26-Feb-2019 10:58:14.515 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+26-Feb-2019 10:58:14.515 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.14.3
+26-Feb-2019 10:58:14.515 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+26-Feb-2019 10:58:14.515 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home
+26-Feb-2019 10:58:14.515 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           9.0.4+11
+26-Feb-2019 10:58:14.515 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+26-Feb-2019 10:58:14.515 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/bing/Desktop/github repo/SpringMVC/tomcat
+26-Feb-2019 10:58:14.515 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/bing/Desktop/github repo/SpringMVC/tomcat
+26-Feb-2019 10:58:14.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+26-Feb-2019 10:58:14.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+26-Feb-2019 10:58:14.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+26-Feb-2019 10:58:14.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/bing/Desktop/github repo/SpringMVC/tomcat/conf/logging.properties
+26-Feb-2019 10:58:14.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+26-Feb-2019 10:58:14.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+26-Feb-2019 10:58:14.519 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+26-Feb-2019 10:58:14.519 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+26-Feb-2019 10:58:14.519 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+26-Feb-2019 10:58:14.519 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/bing/Desktop/github repo/SpringMVC/tomcat
+26-Feb-2019 10:58:14.519 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/bing/Desktop/github repo/SpringMVC/tomcat
+26-Feb-2019 10:58:14.519 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/bing/Desktop/github repo/SpringMVC/tomcat/temp
+26-Feb-2019 10:58:14.519 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/bing/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+26-Feb-2019 10:58:14.558 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+26-Feb-2019 10:58:14.610 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+26-Feb-2019 10:58:14.612 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [612] milliseconds
+26-Feb-2019 10:58:14.665 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+26-Feb-2019 10:58:14.665 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.16]
+26-Feb-2019 10:58:14.674 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/docs]
+26-Feb-2019 10:58:15.012 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/docs] has finished in [338] ms
+26-Feb-2019 10:58:15.013 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/manager]
+26-Feb-2019 10:58:15.050 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/manager] has finished in [36] ms
+26-Feb-2019 10:58:15.050 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/examples]
+26-Feb-2019 10:58:15.271 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/examples] has finished in [221] ms
+26-Feb-2019 10:58:15.271 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/ROOT]
+26-Feb-2019 10:58:15.291 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/ROOT] has finished in [20] ms
+26-Feb-2019 10:58:15.291 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/host-manager]
+26-Feb-2019 10:58:15.312 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/host-manager] has finished in [21] ms
+26-Feb-2019 10:58:15.315 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+26-Feb-2019 10:58:15.321 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+26-Feb-2019 10:58:15.323 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [710] milliseconds
+26-Feb-2019 11:09:01.967 WARNING [main] org.apache.catalina.core.StandardServer.await Invalid shutdown command [] received
+26-Feb-2019 11:09:16.999 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+26-Feb-2019 11:09:17.000 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+26-Feb-2019 11:09:17.009 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+26-Feb-2019 11:09:17.015 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+26-Feb-2019 11:09:17.042 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+26-Feb-2019 11:09:17.046 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+26-Feb-2019 11:09:17.048 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+26-Feb-2019 11:09:17.049 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+26-Feb-2019 14:38:15.317 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.16
+26-Feb-2019 14:38:15.321 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Feb 4 2019 16:30:29 UTC
+26-Feb-2019 14:38:15.321 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.16.0
+26-Feb-2019 14:38:15.321 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+26-Feb-2019 14:38:15.321 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.14.3
+26-Feb-2019 14:38:15.322 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+26-Feb-2019 14:38:15.322 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home
+26-Feb-2019 14:38:15.322 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           9.0.4+11
+26-Feb-2019 14:38:15.322 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+26-Feb-2019 14:38:15.322 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/bing/Desktop/github repo/SpringMVC/tomcat
+26-Feb-2019 14:38:15.322 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/bing/Desktop/github repo/SpringMVC/tomcat
+26-Feb-2019 14:38:15.325 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+26-Feb-2019 14:38:15.325 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+26-Feb-2019 14:38:15.325 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+26-Feb-2019 14:38:15.325 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/bing/Desktop/github repo/SpringMVC/tomcat/conf/logging.properties
+26-Feb-2019 14:38:15.325 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+26-Feb-2019 14:38:15.325 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+26-Feb-2019 14:38:15.325 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+26-Feb-2019 14:38:15.326 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+26-Feb-2019 14:38:15.326 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+26-Feb-2019 14:38:15.326 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/bing/Desktop/github repo/SpringMVC/tomcat
+26-Feb-2019 14:38:15.326 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/bing/Desktop/github repo/SpringMVC/tomcat
+26-Feb-2019 14:38:15.326 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/bing/Desktop/github repo/SpringMVC/tomcat/temp
+26-Feb-2019 14:38:15.326 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/bing/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+26-Feb-2019 14:38:15.367 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+26-Feb-2019 14:38:15.415 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+26-Feb-2019 14:38:15.417 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [613] milliseconds
+26-Feb-2019 14:38:15.471 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+26-Feb-2019 14:38:15.471 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.16]
+26-Feb-2019 14:38:15.487 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/HelloWorld.war]
+26-Feb-2019 14:38:15.845 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/HelloWorld.war] has finished in [358] ms
+26-Feb-2019 14:38:15.845 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/docs]
+26-Feb-2019 14:38:15.863 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/docs] has finished in [17] ms
+26-Feb-2019 14:38:15.863 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/manager]
+26-Feb-2019 14:38:15.895 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/manager] has finished in [32] ms
+26-Feb-2019 14:38:15.895 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/examples]
+26-Feb-2019 14:38:16.164 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/examples] has finished in [269] ms
+26-Feb-2019 14:38:16.165 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/ROOT]
+26-Feb-2019 14:38:16.184 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/ROOT] has finished in [19] ms
+26-Feb-2019 14:38:16.184 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/host-manager]
+26-Feb-2019 14:38:16.208 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/host-manager] has finished in [24] ms
+26-Feb-2019 14:38:16.211 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+26-Feb-2019 14:38:16.218 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+26-Feb-2019 14:38:16.220 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [802] milliseconds
+26-Feb-2019 14:39:46.771 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/HelloWorld]
+26-Feb-2019 14:39:57.302 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context []
+26-Feb-2019 14:39:57.812 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/examples]
+26-Feb-2019 14:39:58.324 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/host-manager]
+26-Feb-2019 14:39:58.832 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/manager]
+26-Feb-2019 14:39:59.339 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/docs]
+26-Feb-2019 14:40:05.028 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+26-Feb-2019 14:40:05.028 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+26-Feb-2019 14:40:05.036 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+26-Feb-2019 14:40:05.043 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+26-Feb-2019 14:40:05.044 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+26-Feb-2019 14:40:05.046 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+26-Feb-2019 14:40:05.047 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+26-Feb-2019 14:40:05.047 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+26-Feb-2019 14:42:36.792 WARNING [main] org.apache.catalina.core.StandardContext.setPath A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+26-Feb-2019 14:42:36.797 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Server/Service/Engine/Host/Context] failed to set property [debug] to [0]
+26-Feb-2019 14:42:36.811 SEVERE [main] org.apache.tomcat.util.digester.Digester.fatalError Parse fatal error at line [165] column [9]
+ org.xml.sax.SAXParseException; systemId: file:/Users/bing/Desktop/github%20repo/SpringMVC/tomcat/conf/server.xml; lineNumber: 165; columnNumber: 9; The element type "Context" must be terminated by the matching end-tag "</Context>".
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:399)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:326)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1680)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2879)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:601)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:531)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:887)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:823)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:639)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1431)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:567)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:612)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:306)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:491)
+
+26-Feb-2019 14:42:36.813 WARNING [main] org.apache.catalina.startup.Catalina.load Unable to load server configuration from [/Users/bing/Desktop/github repo/SpringMVC/tomcat/conf/server.xml]
+ org.xml.sax.SAXParseException; systemId: file:/Users/bing/Desktop/github%20repo/SpringMVC/tomcat/conf/server.xml; lineNumber: 165; columnNumber: 9; The element type "Context" must be terminated by the matching end-tag "</Context>".
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1239)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:639)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1431)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:567)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:612)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:306)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:491)
+
+26-Feb-2019 14:42:36.813 SEVERE [main] org.apache.catalina.startup.Catalina.start Cannot start server, server instance is not configured
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+26-Feb-2019 14:44:34.781 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Server/Service/Engine/Host/Context] failed to set property [debug] to [0]
+26-Feb-2019 14:44:34.798 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.16
+26-Feb-2019 14:44:34.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Feb 4 2019 16:30:29 UTC
+26-Feb-2019 14:44:34.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.16.0
+26-Feb-2019 14:44:34.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+26-Feb-2019 14:44:34.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.14.3
+26-Feb-2019 14:44:34.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+26-Feb-2019 14:44:34.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home
+26-Feb-2019 14:44:34.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           9.0.4+11
+26-Feb-2019 14:44:34.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+26-Feb-2019 14:44:34.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/bing/Desktop/github repo/SpringMVC/tomcat
+26-Feb-2019 14:44:34.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/bing/Desktop/github repo/SpringMVC/tomcat
+26-Feb-2019 14:44:34.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+26-Feb-2019 14:44:34.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+26-Feb-2019 14:44:34.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+26-Feb-2019 14:44:34.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/bing/Desktop/github repo/SpringMVC/tomcat/conf/logging.properties
+26-Feb-2019 14:44:34.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+26-Feb-2019 14:44:34.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+26-Feb-2019 14:44:34.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+26-Feb-2019 14:44:34.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+26-Feb-2019 14:44:34.802 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+26-Feb-2019 14:44:34.802 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/bing/Desktop/github repo/SpringMVC/tomcat
+26-Feb-2019 14:44:34.802 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/bing/Desktop/github repo/SpringMVC/tomcat
+26-Feb-2019 14:44:34.802 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/bing/Desktop/github repo/SpringMVC/tomcat/temp
+26-Feb-2019 14:44:34.802 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/bing/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+26-Feb-2019 14:44:34.838 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+26-Feb-2019 14:44:34.869 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+26-Feb-2019 14:44:34.871 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [508] milliseconds
+26-Feb-2019 14:44:34.916 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+26-Feb-2019 14:44:34.916 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.16]
+26-Feb-2019 14:44:35.411 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/HelloWorld.war]
+26-Feb-2019 14:44:35.450 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/HelloWorld.war] has finished in [39] ms
+26-Feb-2019 14:44:35.452 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/docs]
+26-Feb-2019 14:44:35.476 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/docs] has finished in [24] ms
+26-Feb-2019 14:44:35.477 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/manager]
+26-Feb-2019 14:44:35.513 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/manager] has finished in [36] ms
+26-Feb-2019 14:44:35.514 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/examples]
+26-Feb-2019 14:44:35.765 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/examples] has finished in [251] ms
+26-Feb-2019 14:44:35.766 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/ROOT]
+26-Feb-2019 14:44:35.790 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/ROOT] has finished in [24] ms
+26-Feb-2019 14:44:35.791 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/host-manager]
+26-Feb-2019 14:44:35.813 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/host-manager] has finished in [21] ms
+26-Feb-2019 14:44:35.817 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+26-Feb-2019 14:44:35.823 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+26-Feb-2019 14:44:35.825 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [953] milliseconds
+26-Feb-2019 14:49:53.354 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+26-Feb-2019 14:49:53.355 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+26-Feb-2019 14:49:53.365 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+26-Feb-2019 14:49:53.371 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+26-Feb-2019 14:49:53.401 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+26-Feb-2019 14:49:53.404 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+26-Feb-2019 14:49:53.405 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+26-Feb-2019 14:49:53.406 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+26-Feb-2019 14:49:59.930 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Server/Service/Engine/Host/Context] failed to set property [debug] to [0]
+26-Feb-2019 14:49:59.956 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.16
+26-Feb-2019 14:49:59.956 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Feb 4 2019 16:30:29 UTC
+26-Feb-2019 14:49:59.956 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.16.0
+26-Feb-2019 14:49:59.956 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+26-Feb-2019 14:49:59.956 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.14.3
+26-Feb-2019 14:49:59.956 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+26-Feb-2019 14:49:59.957 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home
+26-Feb-2019 14:49:59.957 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           9.0.4+11
+26-Feb-2019 14:49:59.957 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+26-Feb-2019 14:49:59.957 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/bing/Desktop/github repo/SpringMVC/tomcat
+26-Feb-2019 14:49:59.957 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/bing/Desktop/github repo/SpringMVC/tomcat
+26-Feb-2019 14:49:59.958 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+26-Feb-2019 14:49:59.958 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+26-Feb-2019 14:49:59.958 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+26-Feb-2019 14:49:59.958 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/bing/Desktop/github repo/SpringMVC/tomcat/conf/logging.properties
+26-Feb-2019 14:49:59.958 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+26-Feb-2019 14:49:59.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+26-Feb-2019 14:49:59.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+26-Feb-2019 14:49:59.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+26-Feb-2019 14:49:59.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+26-Feb-2019 14:49:59.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/bing/Desktop/github repo/SpringMVC/tomcat
+26-Feb-2019 14:49:59.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/bing/Desktop/github repo/SpringMVC/tomcat
+26-Feb-2019 14:49:59.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/bing/Desktop/github repo/SpringMVC/tomcat/temp
+26-Feb-2019 14:49:59.959 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/bing/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+26-Feb-2019 14:49:59.998 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-80"]
+26-Feb-2019 14:50:00.039 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+26-Feb-2019 14:50:00.042 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [533] milliseconds
+26-Feb-2019 14:50:00.092 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+26-Feb-2019 14:50:00.092 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.16]
+26-Feb-2019 14:50:00.534 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/HelloWorld.war]
+26-Feb-2019 14:50:00.564 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/HelloWorld.war] has finished in [30] ms
+26-Feb-2019 14:50:00.565 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/docs]
+26-Feb-2019 14:50:00.589 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/docs] has finished in [23] ms
+26-Feb-2019 14:50:00.589 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/manager]
+26-Feb-2019 14:50:00.633 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/manager] has finished in [44] ms
+26-Feb-2019 14:50:00.634 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/examples]
+26-Feb-2019 14:50:00.961 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/examples] has finished in [327] ms
+26-Feb-2019 14:50:00.961 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/ROOT]
+26-Feb-2019 14:50:00.986 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/ROOT] has finished in [25] ms
+26-Feb-2019 14:50:00.986 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/host-manager]
+26-Feb-2019 14:50:01.010 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/host-manager] has finished in [24] ms
+26-Feb-2019 14:50:01.014 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-80"]
+26-Feb-2019 14:50:01.022 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+26-Feb-2019 14:50:01.024 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [982] milliseconds
+26-Feb-2019 16:07:01.658 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/untitled folder]
+26-Feb-2019 16:07:01.686 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/untitled folder] has finished in [27] ms
+26-Feb-2019 16:07:12.192 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/untitled folder]
+26-Feb-2019 16:07:12.210 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/Blog]
+26-Feb-2019 16:07:12.223 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/Blog] has finished in [13] ms
+26-Feb-2019 16:18:51.354 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+26-Feb-2019 16:18:51.354 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-80"]
+26-Feb-2019 16:18:51.364 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+26-Feb-2019 16:18:51.370 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+26-Feb-2019 16:18:51.402 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-80"]
+26-Feb-2019 16:18:51.405 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+26-Feb-2019 16:18:51.408 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-80"]
+26-Feb-2019 16:18:51.409 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+26-Feb-2019 16:18:56.499 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Server/Service/Engine/Host/Context] failed to set property [debug] to [0]
+26-Feb-2019 16:18:56.509 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Server/Service/Engine/Host/Context] failed to set property [debug] to [0]
+26-Feb-2019 16:18:56.520 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.16
+26-Feb-2019 16:18:56.520 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Feb 4 2019 16:30:29 UTC
+26-Feb-2019 16:18:56.520 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.16.0
+26-Feb-2019 16:18:56.521 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+26-Feb-2019 16:18:56.521 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.14.3
+26-Feb-2019 16:18:56.521 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+26-Feb-2019 16:18:56.521 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home
+26-Feb-2019 16:18:56.521 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           9.0.4+11
+26-Feb-2019 16:18:56.521 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+26-Feb-2019 16:18:56.521 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/bing/Desktop/github repo/SpringMVC/tomcat
+26-Feb-2019 16:18:56.522 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/bing/Desktop/github repo/SpringMVC/tomcat
+26-Feb-2019 16:18:56.523 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+26-Feb-2019 16:18:56.523 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+26-Feb-2019 16:18:56.523 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+26-Feb-2019 16:18:56.523 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/bing/Desktop/github repo/SpringMVC/tomcat/conf/logging.properties
+26-Feb-2019 16:18:56.524 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+26-Feb-2019 16:18:56.524 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+26-Feb-2019 16:18:56.524 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+26-Feb-2019 16:18:56.524 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+26-Feb-2019 16:18:56.524 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+26-Feb-2019 16:18:56.524 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/bing/Desktop/github repo/SpringMVC/tomcat
+26-Feb-2019 16:18:56.524 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/bing/Desktop/github repo/SpringMVC/tomcat
+26-Feb-2019 16:18:56.524 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/bing/Desktop/github repo/SpringMVC/tomcat/temp
+26-Feb-2019 16:18:56.524 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/bing/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+26-Feb-2019 16:18:56.563 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-80"]
+26-Feb-2019 16:18:56.595 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+26-Feb-2019 16:18:56.597 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [508] milliseconds
+26-Feb-2019 16:18:56.642 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+26-Feb-2019 16:18:56.642 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.16]
+26-Feb-2019 16:18:57.031 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/HelloWorld.war]
+26-Feb-2019 16:18:57.065 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/HelloWorld.war] has finished in [34] ms
+26-Feb-2019 16:18:57.066 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/docs]
+26-Feb-2019 16:18:57.090 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/docs] has finished in [24] ms
+26-Feb-2019 16:18:57.091 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/Blog]
+26-Feb-2019 16:18:57.115 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/Blog] has finished in [24] ms
+26-Feb-2019 16:18:57.115 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/manager]
+26-Feb-2019 16:18:57.159 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/manager] has finished in [44] ms
+26-Feb-2019 16:18:57.160 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/examples]
+26-Feb-2019 16:18:57.575 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/examples] has finished in [415] ms
+26-Feb-2019 16:18:57.575 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/ROOT]
+26-Feb-2019 16:18:57.600 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/ROOT] has finished in [24] ms
+26-Feb-2019 16:18:57.600 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/host-manager]
+26-Feb-2019 16:18:57.623 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/bing/Desktop/github repo/SpringMVC/tomcat/webapps/host-manager] has finished in [23] ms
+26-Feb-2019 16:18:57.627 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-80"]
+26-Feb-2019 16:18:57.633 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+26-Feb-2019 16:18:57.636 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1,038] milliseconds
+26-Feb-2019 16:38:15.327 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+26-Feb-2019 16:38:15.328 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-80"]
+26-Feb-2019 16:38:15.338 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+26-Feb-2019 16:38:15.344 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+26-Feb-2019 16:38:15.384 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-80"]
+26-Feb-2019 16:38:15.388 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+26-Feb-2019 16:38:15.390 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-80"]
+26-Feb-2019 16:38:15.390 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]

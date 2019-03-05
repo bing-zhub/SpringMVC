@@ -1,0 +1,451 @@
+body {
+    background-color: #f3f5f7;
+    
+}
+
+.main-header {
+    width: 1300px;
+    height: 100px;
+    /* background-color: #F00; */
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.logo {
+    width: 250px;
+    height: 50px;
+    padding-top: 10px;
+    /* background-color: #0ff; */
+    float: left;
+}
+
+.logo a {
+    display: block; /*使用block是为了显示图片 隐藏链接title*/
+    width: 248px;
+    height: 48px;
+    background: url(../images/logo.png) no-repeat;
+    text-indent: -990px;  /*隐藏链接文字 向左偏990px 假隐藏*/
+    overflow: hidden;  /* 超出部分 真隐藏*/
+}
+
+nav {
+    margin-left: 25px;
+    padding-top: 15px;
+    float: left; /*浮动到左边*/
+}
+
+nav li {
+    float: left; /*浮动到nav左边*/
+    height: 40px; /*li高度40px*/
+    line-height: 40px; /*行高*/
+    margin-left: 25px;
+}
+
+nav li a {
+    height: 40px;
+    display: block;
+    font-size: 18px;
+    padding: 0px 10px;
+}
+
+nav li a:hover {
+    border-bottom: 2px solid #00A4FF;
+}
+
+.search {
+    margin-top: 15px;
+    margin-left: 50px;
+    height: 40px;
+    width: 410px;
+    background-color: #f00;
+    float: left;
+}
+
+.search input {
+    width: 360px;
+    height: 40px;
+    border: 1px solid #00A4FF;
+    outline: none; /*轮廓线*/
+    padding-left: 10px;
+    float: left;
+}
+
+.search button {
+    width: 50px;
+    height: 40px;
+    float: right;
+    border: 0;
+    background: url(../images/fa-search.png) no-repeat;
+}
+
+.personal {
+    float: right;
+    margin-top: 20px;
+    height: 40px;
+    line-height: 40px;
+}
+
+
+.personal s {
+	position: relative; /*相对定位*/
+	/* padding: 20px; */
+	padding: 0 20px;
+	text-decoration: none; /*去除下划线*/
+}
+
+.personal dt, .personal dd {
+    float: left;
+    margin-right: 20px;
+}
+
+.personal span img {
+    border-radius: 50%; /*成正圆*/
+	margin-right: 10px; 
+    transition: all 0.6s; /*旋转动画*/
+}
+
+.personal span img:hover {
+    transform: rotate(-3600deg);
+}
+
+.banner {
+    height: 420px;
+    background-color: #c1ddf8;
+}
+
+.inner {
+    height: 420px;
+    position: relative; /*相对上一个元素*/
+}
+
+.subnav {
+    position: absolute; /*在banner中绝对定位*/
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 190px;
+    background: rgba(0, 0, 0, .2);
+    padding-top: 20px;
+}
+
+.subnav li {
+    padding-left: 20px;
+    position: relative; /*相对subnav定位*/
+    height: 40px;
+    line-height: 40px;
+}
+
+.subnav a {
+    font-size: 20px;
+    color: #fff;
+    display: block; /*做块级元素 一行一个*/
+}
+
+.subnav a:hover {
+    color: #00b4ff;
+}
+
+.subnav span {
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+
+.container {
+	position: relative;
+	width: 750px;
+	height: 420px;
+	margin:0 245px 0 auto;
+	overflow: hidden;
+}
+
+.wrap {
+	position: absolute;
+	width: 4800px;
+	height: 420px;
+	z-index: 1;
+	transition: all 1s;
+	background-color: #c6dcf5;
+}
+
+.container .wrap img {
+	float: left;
+	width: 750px;
+	height: 420px;
+}
+
+.schedule {
+    width: 228px;
+	height: 300px;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: #fff;
+}
+
+.schedule dt{
+    height: 50px;
+    background-color: #9bceea;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+.schedule dd {
+    padding: 15px;
+}
+
+.schedule dd ul li {
+    height: 60px;
+    border-bottom: 1px solid #ccc;
+    padding-top: 6px;
+}
+
+.schedule dd ul li:last-child {
+	border: none;
+}
+
+.schedule dd ul li h5 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.schedule dd a {
+    display: block;
+    height: 40px;
+    border: 1px solid #22b0ff;
+    color: #22b0ff;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.schedule dd a:hover{
+    color: #fff;
+    background-color: #22b0ff;
+}
+
+.recommend {
+	margin-top: 10px;
+	background-color: #fff;
+	height: 60px;
+	line-height: 60px;
+	position: relative;
+	box-shadow: 1px 1px 12px rgba(0, 0, 0, .2);
+}
+
+.recommend .rec-l {
+	padding-left: 20px;
+}
+
+.recommend .rec-l a {
+	margin: 0 15px;
+	font-size: 14px;
+}
+
+.recommend .rec-l a:hover {
+	color: #22b0ff;
+}
+
+.recommend .rec-l strong {
+	color: #22b0ff;
+	margin-right: 15px;
+	font-size: 14px;
+}
+
+.recommend em {
+	color: #22b0ff;
+	position: absolute;
+	top: 0;
+	right: 20px;
+	cursor: pointer;
+}
+
+.carrier {
+	margin-top: 10px;
+	background-color: #fff;
+	height: 60px;
+	line-height: 60px;
+	position: relative;
+	box-shadow: 1px 1px 12px rgba(0, 0, 0, .2);
+}
+
+.carrier .rec-l {
+	padding-left: 20px;
+}
+
+.carrier .rec-l a {
+	margin: 0 15px;
+	font-size: 14px;
+}
+
+.products {
+	margin-top: 20px;
+}
+
+.products .pro-hd {
+	height: 40px;
+	position: relative;
+}
+
+.products .pro-hd h4 {
+	font-weight: normal;
+	font-size: 18px;
+}
+
+.products .pro-hd a {
+	position: absolute;
+	top: 0;
+	right: 20px;
+}
+
+.products .pro-hd a:hover {
+	color: #22b0ff;
+}
+
+.products .pro-bd ul li {
+	width: 228px;
+	height: 270px;
+	list-style: none;
+	background-color: #fff;
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	transition: all 0.3s;
+	overflow: hidden;
+	border: #7e7e7e1c 1px solid;
+}
+
+.products .pro-bd ul li:hover {
+	box-shadow: 1px 10px 12px rgba(0, 0, 0, .2);
+	transform: translate(0, -4px);
+}
+
+.products .pro-bd ul li:nth-child(5) {
+	margin-right: 0;
+}
+
+.products .pro-bd ul li:nth-child(10) {
+	margin-right: 0;
+}
+
+.products .pro-bd ul li .pic img {
+	transition: all 1s;
+}
+
+.products .pro-bd ul li .pic:hover img {
+	transform: translate(-5px, 0);
+}
+
+.products .pro-bd ul li .pro-title {
+	width: 185px;
+	margin: 20px auto;
+	font-size: 14px;
+	color: #050505;
+}
+
+.products .pro-bd ul li p {
+	width: 185px;
+	margin: 0px auto;
+	color: #999;
+	font-size: 13px;
+}
+
+.products .pro-bd ul li p span {
+	color: #ff7c2d;
+}
+
+.pagination-container {
+	text-align: center;
+	clear: both;
+	display: block;
+}
+
+.pagination {
+	display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.pagination li {
+	display: inline-block;
+    margin: 0 2px;
+}
+
+.pagination li a {
+	font-size: 15px;
+	padding: 8px 16px;
+	background-color: #fff;
+}
+
+.pagination li :hover{
+	background-color: #22b0ff;
+	color: white;
+}
+
+.main-footer {
+	height: 225px;
+	margin-top: 75px;
+	padding-top: 30px;
+	background-color: #fff;
+}
+
+.main-footer .w {
+	position: relative;
+}
+
+.main-footer .footer-l {
+	margin-left: 20px;
+	float: left;
+}
+
+.main-footer .footer-l p {
+	margin: 25px 0 15px;
+	line-height: 20px;
+}
+
+.main-footer .footer-l a {
+	display: inline-block;
+	width: 120px;
+	height: 35px;
+	color: #22b0ff;
+	border: 1px solid #22b0ff; 
+	text-align: center;
+	line-height: 30px;
+}
+
+.main-footer .footer-l a:hover {
+	background-color: #22b0ff;
+	color: #fff;
+}
+
+.main-footer .footer-r {
+	float: right;
+}
+
+.main-footer .footer-r dl {
+	float: left;
+}
+
+.main-footer .footer-r dl:nth-child(2) {
+	margin: 0 130px;
+}
+
+.main-footer .footer-r dt {
+	font-size: 18px;
+	color: #333;
+	height: 30px;
+} 
+
+.main-footer .footer-r dl dd {
+	height: 20px;
+}
+
+.main-footer .footer-r dl dd:hover {
+	cursor: pointer;
+	color: #22b0ff; 
+}

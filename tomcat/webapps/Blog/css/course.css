@@ -1,0 +1,194 @@
+.breadcrumb {
+    margin: 10px;
+    padding: 10px 0;
+    font-size: 13px;
+    background: transparent;
+    border-radius: 0;
+}
+
+.breadcrumb>li {
+    display: inline-block;
+}
+
+.breadcrumb>li+li:before {
+    content: "/\00a0";
+    padding: 0 5px;
+    color: #ccc;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+    box-sizing: border-box;
+    display: block;
+    line-height: 1.42857143;
+    color: #333;
+}
+
+.layout-body, .layout-side {
+    padding: 0 5px;
+}
+
+.layout-body {
+    width: 75%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+}
+
+.layout-side {
+    width: 25%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+}
+
+.course-info {
+    position: relative;
+    padding-bottom: 30px!important;
+    margin-bottom: 10px;
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #eee;
+}
+
+.course-info-header {
+    overflow: hidden;
+}
+
+.course-info-title {
+    font-size: 21px;
+}
+
+.course-type-free {
+    background: #80c269;
+    margin-left: 8px;
+    padding: 0 6px;
+    border-radius: 73px;
+    font-size: 13px;
+    display: inline-block;
+    vertical-align: 3px;
+    color: #fff;
+}
+
+.course-info-follow {
+    font-size: 15px;
+    margin-top: -20px;
+    color: #999;
+    float: right !important;
+}
+
+.course-info-content {
+    margin: 16px 0 0;
+    color: #4c5157;
+    font-size: 15px;
+    word-wrap: break-word;
+}
+
+.start-learning {
+    margin-top: 25px;
+    display: inline-block;
+    padding: 10px 78px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #45a3f8;
+    border-color: #45a5f8a4;
+    border-radius: 4px;
+}
+
+.start-learning:hover {
+    color: white;
+    background-color: rgba(13, 101, 241, 0.883);
+}
+
+.content {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 30px;
+    background: #fff;
+}
+
+.tab-content {
+    margin-top: 20px;
+    display: block;
+}
+
+.study-item {
+    position: relative;
+    margin: 12px 0;
+    border: 1px solid #eee;
+}
+
+.item-header {
+    background: #f7f7f7;
+    border-bottom: 1px solid #eee;
+    padding-right: 10px;
+    height: 55px;
+}
+
+.study-item .item-header>div {
+    display: inline-block;
+    margin: 0 12px;
+    padding: 14px 0;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.study-item .item-header> .item-ctl{
+    padding: 0;
+    margin: 18px 0 0;
+    z-index: 10;
+    float: right !important;
+}
+
+.item-body {
+    margin: 10px 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 14px;
+    color: #a4a4a4;
+}
+
+.course-mentor {
+    margin:10px 0px 10px 900px;
+    padding: 15px;
+    background: #fff;
+}
+
+.mentor-header {
+    overflow: hidden;
+    padding: 0 0 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.mentor-body {
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.mentor-body a{
+    display: block;
+    float: left;
+    width: 64px;
+    height: 64px;
+    margin-right: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.mentor-body .mentor-extra-info {
+    padding: 5px;
+}
+
+.mentor-footer {
+    overflow: hidden;
+}
+
+.mentor-footer a {
+    float: right;
+    font-size: 14px;
+    color: #529fd2;
+}
