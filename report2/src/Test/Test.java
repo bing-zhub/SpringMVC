@@ -20,6 +20,15 @@ public class Test extends HttpServlet{
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-    
+        String error = req.getParameter("error");
+        if(error.equals("true")){
+            throw new RuntimeException("Server Exploded");
+        }
+
+        String browser = req.getHeader("User-Agent");
+        resp.setStatus(HttpServletResponse.SC_OK);
+        resp.setContentType("text/plain");
+        PrintWriter out = resp.getWriter();
+        out.println(browser);
     }
 }
