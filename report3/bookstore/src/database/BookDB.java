@@ -167,7 +167,7 @@ public class BookDB {
         }
     }
 
-    public void buyBooks(ShoppingCart cart) throws OrderException {
+    public void buyBooks(String userId, ShoppingCart cart) throws OrderException {
         Collection items = cart.getItems();
         Iterator i = items.iterator();
         try {
@@ -198,6 +198,16 @@ public class BookDB {
 
     public void buyBook(String bookId, int quantity) throws OrderException {
         try {
+            decreaseInventory(bookId, quantity);
+
+        } catch (Exception ex) {
+            throw new OrderException("Couldn't purchase book: " + bookId + ex.getMessage());
+        }
+    }
+
+
+    public void decreaseInventory(String bookId, int quantity){
+        try {
             String selectStatement = "select * " + "from books where id = ? ";
             PreparedStatement prepStmt = con.prepareStatement(selectStatement);
             prepStmt.setString(1, bookId);
@@ -217,8 +227,7 @@ public class BookDB {
                             + " in stock to complete order.");
             }
         } catch (Exception ex) {
-            throw new OrderException("Couldn't purchase book: " + bookId
-                    + ex.getMessage());
+            ex.printStackTrace();
         }
     }
 

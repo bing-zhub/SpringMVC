@@ -31,7 +31,7 @@ import exception.OrderException;
  * session, thanks the User for the order.
  */
 
-public class ReceiptServlet extends HttpServlet {
+public class CashierServlet extends HttpServlet {
 
     private BookDB bookDB;
 
@@ -45,13 +45,37 @@ public class ReceiptServlet extends HttpServlet {
         bookDB = null;
     }
 
-    public void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        HttpSession session = req.getSession(true);
+        String userId = (String) session.getAttribute("userid");
+        if(userId==null || userId.isEmpty()){
+            // Î´µÇÂ¼
+            PrintWriter out = resp.getWriter();
+            out.print("<script> alert('please login and retry');" +
+                    " setTimeout(function(){location.href='/login'},1000)" +
+                    "</script>");
+        }else{
+            // ÒÑµÇÂ¼
+            ShoppingCart cart = (ShoppingCart)session.getAttribute("cart");
+            if (cart == null) {
+                cart = new ShoppingCart();
+                session.setAttribute("cart", cart);
+            }
+
+            try {
+                bookDB.buyBooks(userId, cart);
+            } catch (OrderException e) {
+                System.err.println(e.getMessage());
+            }
+
+        }
+    }
+
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         boolean orderCompleted = true;
-        // Get the User's session and shopping cart
         HttpSession session = request.getSession(true);
-        ResourceBundle messages = (ResourceBundle) session
-                .getAttribute("messages");
+        ResourceBundle messages = (ResourceBundle) session.getAttribute("messages");
         ShoppingCart cart = (ShoppingCart) session.getAttribute("cart");
         if (cart == null) {
             cart = new ShoppingCart();
@@ -59,7 +83,7 @@ public class ReceiptServlet extends HttpServlet {
         }
         // Update the inventory
         try {
-            bookDB.buyBooks(cart);
+            bookDB.buyBooks(" ",cart);
         } catch (OrderException e) {
             System.err.println(e.getMessage());
             orderCompleted = false;

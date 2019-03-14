@@ -33,10 +33,12 @@ public class LoginServlet extends HttpServlet {
         HttpSession session = req.getSession(true);
         String username = "";
         try {
-            String iun = req.getParameter("username");
+            String iuid = req.getParameter("username");
             String ipwd = req.getParameter("pwd");
-           username = bookDB.checkUser(iun, ipwd);
+           username = bookDB.checkUser(iuid, ipwd);
            session.setAttribute("username",username);
+            session.setAttribute("userid",iuid);
+
 //            req.getRequestDispatcher("/WEB-INF/jsp/catalog.jsp").forward(req, resp);
             resp.sendRedirect("catalog");
         } catch (Exception e) {
