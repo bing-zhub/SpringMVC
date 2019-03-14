@@ -20,7 +20,7 @@
                 <%String msg=(String)session.getAttribute("username");
                     if(msg!=null && !msg.equals("")){
                 %>
-                <li><a href="#"><%=msg%></a></li>
+                <li><a href="/order"><%=msg%></a></li>
                 <li><a href="/logout">Logout</a></li>
                 <%
                         if(session.getAttribute("logSucHint")==null || !(boolean)session.getAttribute("logSucHint")){

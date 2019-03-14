@@ -39,7 +39,6 @@ public class LoginServlet extends HttpServlet {
            session.setAttribute("username",username);
             session.setAttribute("userid",iuid);
 
-//            req.getRequestDispatcher("/WEB-INF/jsp/catalog.jsp").forward(req, resp);
             resp.sendRedirect("catalog");
         } catch (Exception e) {
             session.setAttribute("errmsg",e.getMessage());

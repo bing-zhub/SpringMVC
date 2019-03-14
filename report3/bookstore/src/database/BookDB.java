@@ -14,16 +14,15 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Iterator;
+import java.util.*;
 
 import cart.ShoppingCart;
 import cart.ShoppingCartItem;
 import exception.BookNotFoundException;
 import exception.BooksNotFoundException;
 import exception.OrderException;
+import order.Order;
+import order.OrderDetail;
 
 import javax.servlet.ServletContext;
 
@@ -302,5 +301,58 @@ public class BookDB {
         }
         return username;
     }
+
+    public List<Order> getUserOrders(String userId){
+        List<Order> orders = new LinkedList<>();
+        String pst = "SELECT * FROM `order` WHERE userId = ?";
+        try {
+            PreparedStatement preparedStatement = con.prepareStatement(pst);
+            preparedStatement.setString(1, userId);
+            ResultSet rs = preparedStatement.executeQuery();
+            while(rs.next()){
+                Order order = new Order();
+                order.setOrderId(rs.getInt(1));
+                order.setUserId(userId);
+                order.setCreateAt(rs.getDate(4));
+                int detailId = rs.getInt(2);
+                List<OrderDetail> orderDetails = new LinkedList<>();
+                String sql = "SELECT * FROM orderDetail WHERE detailId = ?";
+                PreparedStatement ps = con.prepareStatement(sql);
+                ps.setInt(1, detailId);
+                ResultSet rs1 = ps.executeQuery();
+                while(rs1.next()){
+                    OrderDetail orderDetail = new OrderDetail();
+                    orderDetail.setRecordId(rs1.getInt(1));
+                    orderDetail.setBookId(getBookTitle(rs1.getString(3)));
+                    orderDetail.setQuantity(rs1.getInt(4));
+                    orderDetails.add(orderDetail);
+                }
+                ps.close();
+                order.setDetails(orderDetails);
+                orders.add(order);
+            }
+            preparedStatement.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return orders;
+    }
+
+    private String getBookTitle(String bookId){
+        String pst = "select title from books WHERE id = ?";
+        String bookName = "";
+        try {
+            PreparedStatement preparedStatement = con.prepareStatement(pst);
+            preparedStatement.setString(1, bookId);
+            ResultSet rs = preparedStatement.executeQuery();
+            if(rs.next())
+                bookName = rs.getString(1);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return bookName;
+    }
+
+
 
 }
