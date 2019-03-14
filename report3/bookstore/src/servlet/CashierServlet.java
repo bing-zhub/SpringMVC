@@ -68,6 +68,11 @@ public class CashierServlet extends HttpServlet {
             } catch (OrderException e) {
                 System.err.println(e.getMessage());
             }
+            session.removeAttribute("cart");
+            PrintWriter out = resp.getWriter();
+            out.print("<script> alert('Order created');" +
+                    " setTimeout(function(){location.href='/showcart'},1000)" +
+                    "</script>");
 
         }
     }

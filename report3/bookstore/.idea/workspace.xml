@@ -15,25 +15,58 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="bookstore@115.159.98.171" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="bookstore@115.159.98.171" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="bookstore@115.159.98.171" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="bookstore: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="BookDB.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/database/BookDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="184" column="19" lean-forward="true" selection-start-line="184" selection-start-column="19" selection-end-line="184" selection-end-column="19" />
+            <state relative-caret-position="880">
+              <caret line="261" column="55" lean-forward="false" selection-start-line="261" selection-start-column="55" selection-end-line="261" selection-end-column="55" />
               <folding>
                 <element signature="method#remove#0;class#BookDB#0" expanded="false" />
                 <element signature="method#getConnection#0;class#BookDB#0" expanded="false" />
                 <element signature="method#releaseConnection#0;class#BookDB#0" expanded="false" />
                 <element signature="method#getNumberOfBooks#0;class#BookDB#0" expanded="false" />
                 <element signature="method#getBooks#0;class#BookDB#0" expanded="false" />
-                <marker date="1552530653604" expanded="true" signature="4160:4197" ph="select * fro... books" />
-                <marker date="1552530653604" expanded="true" signature="6657:6694" ph="select * fro... books" />
-                <marker date="1552530653604" expanded="true" signature="7079:7134" ph="update books... " />
-                <marker date="1552530653604" expanded="true" signature="7963:7997" ph="select * fro... users" />
-                <marker date="1552530653604" expanded="true" signature="7963:7999" ph="select * fro... users" />
-                <marker date="1552530653604" expanded="true" signature="7963:8012" ph="select * fro... users" />
+                <marker date="1552533880164" expanded="true" signature="4160:4197" ph="select * fro... books" />
+                <marker date="1552533880164" expanded="true" signature="6419:6484" ph="insert into `order`... " />
+                <marker date="1552533880164" expanded="true" signature="6894:6931" ph="select max(d... orderDetail" />
+                <marker date="1552533880164" expanded="true" signature="7762:7827" ph="insert into orderDetail... " />
+                <marker date="1552533880164" expanded="true" signature="8322:8359" ph="select * fro... books" />
+                <marker date="1552533880164" expanded="true" signature="8744:8799" ph="update books... " />
+                <marker date="1552533880164" expanded="true" signature="9628:9662" ph="select * fro... users" />
+                <marker date="1552533880164" expanded="true" signature="9628:9664" ph="select * fro... users" />
+                <marker date="1552533880164" expanded="true" signature="9628:9677" ph="select * fro... users" />
               </folding>
             </state>
           </provider>
@@ -42,8 +75,8 @@
       <file leaf-file-name="CashierServlet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/servlet/CashierServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="66" column="24" lean-forward="true" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="24" />
+            <state relative-caret-position="389">
+              <caret line="76" column="9" lean-forward="true" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
               <folding>
                 <element signature="e#1215#1216#0" expanded="true" />
                 <element signature="e#1244#1245#0" expanded="true" />
@@ -276,6 +309,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -589,12 +623,12 @@
       <updated>1552355659043</updated>
       <workItem from="1552355660301" duration="1725000" />
       <workItem from="1552358302524" duration="22615000" />
-      <workItem from="1552528046001" duration="3341000" />
+      <workItem from="1552528046001" duration="6441000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27681000" />
+    <option name="totallyTimeSpent" value="30781000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -606,11 +640,11 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40634596" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.57420677" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -618,7 +652,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1971917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -674,44 +708,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/servlet/CashierServlet.java</url>
-          <line>51</line>
-          <properties />
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/servlet/CashierServlet.java</url>
-          <line>59</line>
-          <properties />
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/servlet/CashierServlet.java</url>
-          <line>60</line>
-          <properties />
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/servlet/CashierServlet.java</url>
-          <line>61</line>
-          <properties />
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/servlet/CashierServlet.java</url>
-          <line>62</line>
-          <properties />
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/servlet/CashierServlet.java</url>
-          <line>63</line>
-          <properties />
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="35" />
     </breakpoint-manager>
     <watches-manager />
@@ -852,8 +848,8 @@
         <state relative-caret-position="390">
           <caret line="43" column="29" lean-forward="false" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
           <folding>
-            <element signature="e#993#994#0" expanded="true" />
-            <element signature="e#1022#1023#0" expanded="true" />
+            <element signature="e#993#994#0" expanded="false" />
+            <element signature="e#1022#1023#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -924,30 +920,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bf8ce81b-3aed-447a-8e4a-cf11d6837bc7/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/database/BookDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="184" column="19" lean-forward="true" selection-start-line="184" selection-start-column="19" selection-end-line="184" selection-end-column="19" />
+        <state relative-caret-position="880">
+          <caret line="261" column="55" lean-forward="false" selection-start-line="261" selection-start-column="55" selection-end-line="261" selection-end-column="55" />
           <folding>
             <element signature="method#remove#0;class#BookDB#0" expanded="false" />
             <element signature="method#getConnection#0;class#BookDB#0" expanded="false" />
             <element signature="method#releaseConnection#0;class#BookDB#0" expanded="false" />
             <element signature="method#getNumberOfBooks#0;class#BookDB#0" expanded="false" />
             <element signature="method#getBooks#0;class#BookDB#0" expanded="false" />
-            <marker date="1552530653604" expanded="true" signature="4160:4197" ph="select * fro... books" />
-            <marker date="1552530653604" expanded="true" signature="6657:6694" ph="select * fro... books" />
-            <marker date="1552530653604" expanded="true" signature="7079:7134" ph="update books... " />
-            <marker date="1552530653604" expanded="true" signature="7963:7997" ph="select * fro... users" />
-            <marker date="1552530653604" expanded="true" signature="7963:7999" ph="select * fro... users" />
-            <marker date="1552530653604" expanded="true" signature="7963:8012" ph="select * fro... users" />
+            <marker date="1552533880164" expanded="true" signature="4160:4197" ph="select * fro... books" />
+            <marker date="1552533880164" expanded="true" signature="6419:6484" ph="insert into `order`... " />
+            <marker date="1552533880164" expanded="true" signature="6894:6931" ph="select max(d... orderDetail" />
+            <marker date="1552533880164" expanded="true" signature="7762:7827" ph="insert into orderDetail... " />
+            <marker date="1552533880164" expanded="true" signature="8322:8359" ph="select * fro... books" />
+            <marker date="1552533880164" expanded="true" signature="8744:8799" ph="update books... " />
+            <marker date="1552533880164" expanded="true" signature="9628:9662" ph="select * fro... users" />
+            <marker date="1552533880164" expanded="true" signature="9628:9664" ph="select * fro... users" />
+            <marker date="1552533880164" expanded="true" signature="9628:9677" ph="select * fro... users" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/CashierServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="66" column="24" lean-forward="true" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="24" />
+        <state relative-caret-position="389">
+          <caret line="76" column="9" lean-forward="true" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
           <folding>
             <element signature="e#1215#1216#0" expanded="true" />
             <element signature="e#1244#1245#0" expanded="true" />

@@ -172,14 +172,16 @@ public class BookDB {
         Iterator i = items.iterator();
         try {
             getConnection();
+            int detailId = getDetailId();
             con.setAutoCommit(false);
             while (i.hasNext()) {
                 ShoppingCartItem sci = (ShoppingCartItem) i.next();
-                BookDetails bd = (BookDetails) sci.getItem();
+                BookDetails bd = sci.getItem();
                 String id = bd.getBookId();
                 int quantity = sci.getQuantity();
-                buyBook(id, quantity);
+                buyBook(id, quantity, detailId);
             }
+            createOrder(userId, detailId);
             con.commit();
             con.setAutoCommit(true);
             releaseConnection();
@@ -196,12 +198,53 @@ public class BookDB {
         }
     }
 
-    public void buyBook(String bookId, int quantity) throws OrderException {
+    private void createOrder(String userId, int detailId) {
+        String pst = "insert into `order`(detailId, userId, createAt) VALUES(?,?,NOW())";
         try {
-            decreaseInventory(bookId, quantity);
+            PreparedStatement preparedStatement = con.prepareStatement(pst);
+            preparedStatement.setInt(1, detailId);
+            preparedStatement.setString(2, userId);
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 
+    }
+
+    private int getDetailId() {
+        int detailId = 0;
+        String pst = "select max(detailId) from orderDetail";
+        try {
+            PreparedStatement preparedStatement = con.prepareStatement(pst);
+            ResultSet rs = preparedStatement.executeQuery();
+            if(rs.next())
+                detailId =  rs.getInt(1) + 1;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return detailId;
+    }
+
+    public void buyBook(String bookId, int quantity, int detailId) throws OrderException {
+        // 处理orderDetail表和books库存
+        try {
+            insertOrderDetails(bookId, quantity, detailId);
+            decreaseInventory(bookId, quantity);
         } catch (Exception ex) {
             throw new OrderException("Couldn't purchase book: " + bookId + ex.getMessage());
+        }
+    }
+
+    private void insertOrderDetails(String bookId, int quantity, int detailId) {
+        String pst = "insert into orderDetail(detailId, bookId, quantity) VALUES(?,?,?)";
+        try {
+            PreparedStatement preparedStatement = con.prepareStatement(pst);
+            preparedStatement.setInt(1,detailId);
+            preparedStatement.setString(2, bookId);
+            preparedStatement.setInt(3,quantity);
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
 
