@@ -32,7 +32,7 @@ public class OrderServlet extends HttpServlet {
         HttpSession session = request.getSession(true);
         String userId = (String) session.getAttribute("userid");
         List<Order> orders =  bookDB.getUserOrders(userId);
-        System.out.println(orders);
+        session.setAttribute("orders", orders);
         request.getRequestDispatcher("/WEB-INF/jsp/login.jsp").forward(request, response);
     }
 }

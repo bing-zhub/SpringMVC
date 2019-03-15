@@ -1,6 +1,8 @@
 <%@page import="cart.ShoppingCartItem"%>
 <%@page import="cart.ShoppingCart"%>
 <%@ page import="database.BookDetails" %>
+<%@ page import="java.util.List" %>
+<%@ page import="order.Order" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -17,10 +19,9 @@
 
     <div class="starter-template">
         <%
-            ShoppingCart cart = (ShoppingCart) session.getAttribute("cart");
-            if(cart.getNumberOfItems()>0){
+            List<Order> orders = (List<Order>) session.getAttribute("orders");
+            if(orders.size()>0){
         %>
-        <font size="+2">Your shopping cart contains <%=cart.getNumberOfItems() %> items</font><br>&nbsp;
 
         <div class="table-responsive">
             <table class="table tablle-hover">

@@ -2,3 +2,4 @@ tomcat
 lib
 *.jar
 Web.xml
+*.zip
