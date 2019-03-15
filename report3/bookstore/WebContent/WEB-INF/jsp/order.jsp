@@ -3,6 +3,7 @@
 <%@ page import="database.BookDetails" %>
 <%@ page import="java.util.List" %>
 <%@ page import="order.Order" %>
+<%@ page import="order.OrderDetail" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -21,49 +22,51 @@
         <%
             List<Order> orders = (List<Order>) session.getAttribute("orders");
             if(orders.size()>0){
+                for(Order order : orders) {
+                %>
+                    <h2 class="sub-header">订单号:<%=order.getOrderId()%> &nbsp; 创建时间: <%=order.getCreateAt()%></h2>
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Quantity</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <%
+                                for(OrderDetail detail:order.getDetails()){
+                            %>
+                            <tr>
+                                <td>
+                                    <a href="<%=request.getContextPath()%>/bookdetails?bookId=<%=detail.getBookId() %>"><%=detail.getBookTitle()%></a>
+                                </td>
+                                <td><%=detail.getQuantity() %></td>
+                            </tr>
+                            <%
+                                }
+                            %>
+                            </tbody>
+                        </table>
+                    </div>
+        <%
+
+                }
         %>
 
-        <div class="table-responsive">
-            <table class="table tablle-hover">
-                <thead>
-                <tr>
-                    <th>Title</th>
-                    <th>Quantity</th>
-                    <th>#</th>
-                </tr>
-                </thead>
-                <tbody>
-                <%
-                    for(ShoppingCartItem item:cart.getItems()){
-                %>
-                <tr>
-                    <td>
-                        <a href="<%=request.getContextPath()%>/bookdetails?bookId=<%=item.getItem().getBookId() %>"><%=item.getItem().getTitle()%></a>
-                    </td>
-                    <td><%=item.getQuantity() %></td>
-                    <td>
-                        <a class="btn btn-primary" href="<%=request.getContextPath()%>/showcart?Remove=<%=item.getItem().getBookId() %>">Remove Item</a>
-                    </td>
-                </tr>
-                <%
-                    }
-                %>
-                </tbody>
-            </table>
-        </div>
+
         <%
         }else{
+                // 未创建订单
         %>
         <div class="jumbotron">
             <h1>Oops!</h1>
-            <p>Your cart is empty</p>
+            <p>Your order box is empty</p>
         </div>
         <%
             }
         %>
-        <%if(cart.getNumberOfItems()>0){%>
-        <a class="btn btn-primary btn-lg" href="<%=request.getContextPath()%>/cashier">Buy Your Books</a>&nbsp;&nbsp;&nbsp;
-        <%}%>
+
         <a class="btn btn-primary btn-lg" href="<%=request.getContextPath() %>/catalog"> Continue Shopping</a>
     </div>
 </div>

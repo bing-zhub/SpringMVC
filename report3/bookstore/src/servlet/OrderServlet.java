@@ -33,6 +33,6 @@ public class OrderServlet extends HttpServlet {
         String userId = (String) session.getAttribute("userid");
         List<Order> orders =  bookDB.getUserOrders(userId);
         session.setAttribute("orders", orders);
-        request.getRequestDispatcher("/WEB-INF/jsp/login.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/jsp/order.jsp").forward(request, response);
     }
 }

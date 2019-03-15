@@ -323,7 +323,8 @@ public class BookDB {
                 while(rs1.next()){
                     OrderDetail orderDetail = new OrderDetail();
                     orderDetail.setRecordId(rs1.getInt(1));
-                    orderDetail.setBookId(getBookTitle(rs1.getString(3)));
+                    orderDetail.setBookId(rs1.getString(3));
+                    orderDetail.setBookTitle(getBookTitle(rs1.getString(3)));
                     orderDetail.setQuantity(rs1.getInt(4));
                     orderDetails.add(orderDetail);
                 }
