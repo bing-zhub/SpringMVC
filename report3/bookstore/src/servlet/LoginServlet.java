@@ -37,6 +37,7 @@ public class LoginServlet extends HttpServlet {
             String ipwd = req.getParameter("pwd");
            username = bookDB.checkUser(iuid, ipwd);
            session.setAttribute("username",username);
+           getServletConfig().getServletContext().setAttribute("username",username);
             session.setAttribute("userid",iuid);
 
             resp.sendRedirect("catalog");

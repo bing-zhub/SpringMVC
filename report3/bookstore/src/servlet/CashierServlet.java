@@ -65,7 +65,7 @@ public class CashierServlet extends HttpServlet {
             session.removeAttribute("cart");
             PrintWriter out = resp.getWriter();
             out.print("<script> alert('Order created');" +
-                    " setTimeout(function(){location.href='/showcart'},1000)" +
+                    " setTimeout(function(){location.href='/order'},1000)" +
                     "</script>");
 
         }

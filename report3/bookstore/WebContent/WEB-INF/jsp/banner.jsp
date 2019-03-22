@@ -48,7 +48,7 @@
 
         <h1>
             <font size="+3" color="#CC0066">Duke's </font>
-            <img src="<%=request.getContextPath() %>/duke.books.gif">
+            <img src="http://images.zshaopingb.cn/2019/03/1537110679.gif">
             <font size="+3" color="black">Bookstore</font>
         </h1>
     </div>

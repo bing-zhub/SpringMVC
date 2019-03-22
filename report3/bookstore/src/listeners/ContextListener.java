@@ -34,6 +34,7 @@ public final class ContextListener implements ServletContextListener {
         context.setAttribute("orderCounter", counter);
     }
 
+
     public void contextDestroyed(ServletContextEvent event) {
         context = event.getServletContext();
         BookDB bookDB = (BookDB) context.getAttribute("bookDB");

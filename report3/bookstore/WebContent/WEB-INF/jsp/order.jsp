@@ -1,6 +1,3 @@
-<%@page import="cart.ShoppingCartItem"%>
-<%@page import="cart.ShoppingCart"%>
-<%@ page import="database.BookDetails" %>
 <%@ page import="java.util.List" %>
 <%@ page import="order.Order" %>
 <%@ page import="order.OrderDetail" %>
@@ -17,6 +14,7 @@
 <body>
 <%@include file="banner.jsp" %>
 <div class="container">
+    <input type="hidden" value="我是中午"/>
 
     <div class="starter-template">
         <%
@@ -24,7 +22,7 @@
             if(orders.size()>0){
                 for(Order order : orders) {
                 %>
-                    <h2 class="sub-header">订单号:<%=order.getOrderId()%> &nbsp; 创建时间: <%=order.getCreateAt()%></h2>
+                    <h2 class="sub-header">Order No:<%=order.getOrderId()%> &nbsp; 创建时间: <%=order.getCreateAt()%></h2>
                     <div class="table-responsive">
                         <table class="table table-hover">
                             <thead>
