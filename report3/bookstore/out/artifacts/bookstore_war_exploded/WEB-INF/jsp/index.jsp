@@ -14,7 +14,6 @@
 	<div class="container">
 
 		<div class="starter-template">
-			<p>中文</p>
 			<%
 				BookDetails bd=(BookDetails)request.getAttribute("bd");
 

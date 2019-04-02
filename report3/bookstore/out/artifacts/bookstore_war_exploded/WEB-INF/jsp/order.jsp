@@ -14,38 +14,38 @@
 <body>
 <%@include file="banner.jsp" %>
 <div class="container">
-    <input type="hidden" value="我是中午"/>
-
     <div class="starter-template">
         <%
             List<Order> orders = (List<Order>) session.getAttribute("orders");
             if(orders.size()>0){
                 for(Order order : orders) {
                 %>
-                    <h2 class="sub-header">Order No:<%=order.getOrderId()%> &nbsp; 创建时间: <%=order.getCreateAt()%></h2>
-                    <div class="table-responsive">
-                        <table class="table table-hover">
-                            <thead>
-                            <tr>
-                                <th>Title</th>
-                                <th>Quantity</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <%
-                                for(OrderDetail detail:order.getDetails()){
-                            %>
-                            <tr>
-                                <td>
-                                    <a href="<%=request.getContextPath()%>/bookdetails?bookId=<%=detail.getBookId() %>"><%=detail.getBookTitle()%></a>
-                                </td>
-                                <td><%=detail.getQuantity() %></td>
-                            </tr>
-                            <%
-                                }
-                            %>
-                            </tbody>
-                        </table>
+                    <h2 class="sub-header">Order No:<%=order.getOrderId()%> &nbsp; CreateAt: <%=order.getCreateAt()%></h2>
+                    <div class="card box-shadow">
+                        <div class="jumbotron" style="margin-bottom: 40px;">
+                            <table class="table table-hover">
+                                <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Quantity</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <%
+                                    for(OrderDetail detail:order.getDetails()){
+                                %>
+                                <tr>
+                                    <td>
+                                        <a href="<%=request.getContextPath()%>/bookdetails?bookId=<%=detail.getBookId() %>"><%=detail.getBookTitle()%></a>
+                                    </td>
+                                    <td><%=detail.getQuantity() %></td>
+                                </tr>
+                                <%
+                                    }
+                                %>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
         <%
 

@@ -24,11 +24,6 @@
         <spacer></spacer>
         <label class="sr-only">Password</label>
         <input type="password" name="pwd" class="form-control" style="margin-top: 10px;" placeholder="Password" required>
-        <div class="checkbox">
-            <label>
-                <input type="checkbox" value="remember-me"> Remember me
-            </label>
-        </div>
         <%
             String errmsg=(String)session.getAttribute("errmsg");
             if(errmsg!=null){
@@ -39,7 +34,7 @@
             }
         %>
 
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
+        <button class="btn btn-lg btn-primary btn-block" style="margin-top: 25px;" type="submit">Log in</button>
     </form>
 
 </div> <!-- /container -->

@@ -35,11 +35,10 @@ public class LoginServlet extends HttpServlet {
         try {
             String iuid = req.getParameter("username");
             String ipwd = req.getParameter("pwd");
-           username = bookDB.checkUser(iuid, ipwd);
-           session.setAttribute("username",username);
-           getServletConfig().getServletContext().setAttribute("username",username);
+            username = bookDB.checkUser(iuid, ipwd);
+            session.setAttribute("username",username);
+            getServletConfig().getServletContext().setAttribute("username",username);
             session.setAttribute("userid",iuid);
-
             resp.sendRedirect("catalog");
         } catch (Exception e) {
             session.setAttribute("errmsg",e.getMessage());
