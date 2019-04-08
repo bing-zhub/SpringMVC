@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+    <bean id="userDao" class="cn.bing.common.UserDaoImpl"/>
+    <bean id="myAspect" class="cn.bing.factorybean.MyAspect"/>
+    <bean id="userDaoProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <property name="proxyInterfaces" value="cn.bing.common.IUserDao"/>
+        <property name="target" ref="userDao"/>
+        <property name="interceptorNames" value="myAspect"/>
+        <property name="proxyTargetClass" value="true"/>
+    </bean>
+
+</beans>
+
+
