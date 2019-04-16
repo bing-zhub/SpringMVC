@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean id="LoginSessionFactory" class="cn.edu.zucc.pb.LoginServiceFactory">
+        <property name="level" value="L3"/>
+    </bean>
+</beans>
