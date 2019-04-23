@@ -1,6 +1,6 @@
 <%@ page import="java.util.List" %>
-<%@ page import="order.Order" %>
-<%@ page import="order.OrderDetail" %>
+<%@ page import="bean.Order" %>
+<%@ page import="bean.OrderDetail" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -20,7 +20,7 @@
             if(orders.size()>0){
                 for(Order order : orders) {
                 %>
-                    <h2 class="sub-header">Order No:<%=order.getOrderId()%> &nbsp; CreateAt: <%=order.getCreateAt()%></h2>
+                    <h2 class="sub-header">Order No:<%=order.getOrderId()%> &nbsp; CreateAt: <%=order.getCreateAt().toString()%></h2>
                     <div class="card box-shadow">
                         <div class="jumbotron" style="margin-bottom: 40px;">
                             <table class="table table-hover">

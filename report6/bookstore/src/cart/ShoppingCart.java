@@ -13,7 +13,7 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
 
-import database.BookDetails;
+import bean.BookDetails;
 
 public class ShoppingCart {
     HashMap<String,ShoppingCartItem> items = null;

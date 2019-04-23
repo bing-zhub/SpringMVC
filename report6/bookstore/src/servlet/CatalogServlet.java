@@ -1,12 +1,3 @@
-/*
- *
- * Copyright 2001 Sun Microsystems, Inc. All Rights Reserved.
- * 
- * This software is the proprietary information of Sun Microsystems, Inc.  
- * Use is subject to license terms.
- * 
- */
-
 package servlet;
 
 import java.io.IOException;
@@ -20,27 +11,18 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import cart.ShoppingCart;
-import database.BookDB;
-import database.BookDetails;
-import exception.BookNotFoundException;
+import bean.BookDetails;
 import exception.BooksNotFoundException;
+import service.BookService;
 
-/**
- * This is a simple example of an HTTP Servlet. It responds to the GET method of
- * the HTTP protocol.
- */
 public class CatalogServlet extends HttpServlet {
-    private BookDB bookDB;
+    private BookService bookService;
 
     public void init() throws ServletException {
-        bookDB = (BookDB) getServletContext().getAttribute("bookDB");
-        if (bookDB == null)
-            throw new UnavailableException("Couldn't get database.");
-    }
-
-    public void destroy() {
-        bookDB.remove();
-        bookDB = null;
+        bookService = (BookService) getServletContext().getAttribute("bookService");
+        if(bookService == null){
+            throw new UnavailableException("Couldn't get service.");
+        }
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -58,7 +40,7 @@ public class CatalogServlet extends HttpServlet {
         request.setAttribute("msg","bing");
 
         try {
-            Collection<BookDetails> books = bookDB.getBooks();
+            Collection<BookDetails> books = bookService.listAllBooks();
             request.setAttribute("books", books);
             request.getRequestDispatcher("/WEB-INF/jsp/catalog.jsp").forward(request, response);
         } catch (BooksNotFoundException ex) {

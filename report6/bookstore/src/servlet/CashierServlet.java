@@ -1,19 +1,7 @@
-/*
- *
- * Copyright 2001 Sun Microsystems, Inc. All Rights Reserved.
- * 
- * This software is the proprietary information of Sun Microsystems, Inc.  
- * Use is subject to license terms.
- * 
- */
-
 package servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ResourceBundle;
-
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.UnavailableException;
 import javax.servlet.http.HttpServlet;
@@ -22,21 +10,18 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import cart.ShoppingCart;
-import database.BookDB;
 import exception.OrderException;
+import service.OrderService;
 
 public class CashierServlet extends HttpServlet {
 
-    private BookDB bookDB;
+    private OrderService orderService;
 
     public void init() throws ServletException {
-        bookDB = (BookDB) getServletContext().getAttribute("bookDB");
-        if (bookDB == null)
-            throw new UnavailableException("Couldn't get database.");
-    }
+        orderService = (OrderService) getServletContext().getAttribute("orderService");
+        if(orderService == null)
+            throw new UnavailableException("Couldn't get OrderService");
 
-    public void destroy() {
-        bookDB = null;
     }
 
     @Override
@@ -58,7 +43,7 @@ public class CashierServlet extends HttpServlet {
             }
 
             try {
-                bookDB.buyBooks(userId, cart);
+                orderService.buyBooks(userId, cart);
             } catch (OrderException e) {
                 System.err.println(e.getMessage());
             }

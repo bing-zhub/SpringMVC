@@ -17,9 +17,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import database.BookDB;
-import database.BookDetails;
+import bean.BookDetails;
 import exception.BookNotFoundException;
+import service.BookService;
 
 /**
  * An HTTP Servlet that overrides the service method to return a simple web
@@ -27,23 +27,18 @@ import exception.BookNotFoundException;
  */
 public class BookStoreServlet extends HttpServlet {
 
-    private BookDB bookDB;
+    private BookService bookService;
 
     public void init() throws ServletException {
-        bookDB = (BookDB) getServletContext().getAttribute("bookDB");
-        if (bookDB == null)
-            throw new UnavailableException("Couldn't get database.");
-    }
-
-    public void destroy() {
-        bookDB.remove();
-        bookDB = null;
+        bookService = (BookService)getServletContext().getAttribute("bookService");
+        if (bookService == null)
+            throw new UnavailableException("Couldn't get service.");
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         try {
-            BookDetails bd = bookDB.getBookDetails("203");
+            BookDetails bd = bookService.getBookDetails("203");
             request.setAttribute("bd", bd);
             request.getRequestDispatcher("/WEB-INF/jsp/index.jsp").forward(request, response);
         } catch (BookNotFoundException ex) {

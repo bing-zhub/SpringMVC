@@ -17,9 +17,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import database.BookDB;
-import database.BookDetails;
+import bean.BookDetails;
 import exception.BookNotFoundException;
+import service.BookService;
 
 /**
  * This is a simple example of an HTTP Servlet. It responds to the GET method of
@@ -27,16 +27,12 @@ import exception.BookNotFoundException;
  */
 public class BookDetailsServlet extends HttpServlet {
 
-    private BookDB bookDB;
+    private BookService bookService;
 
     public void init() throws ServletException {
-        bookDB = (BookDB) getServletContext().getAttribute("bookDB");
-        if (bookDB == null)
-            throw new UnavailableException("Couldn't get database.");
-    }
-
-    public void destroy() {
-        bookDB = null;
+        bookService = (BookService)getServletContext().getAttribute("bookService");
+        if (bookService == null)
+            throw new UnavailableException("Couldn't get service.");
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -44,7 +40,7 @@ public class BookDetailsServlet extends HttpServlet {
         String bookId = request.getParameter("bookId");
         if (bookId != null) {
             try {
-                BookDetails bd = bookDB.getBookDetails(bookId);
+                BookDetails bd = bookService.getBookDetails(bookId);
                 request.setAttribute("bd",bd);
                 request.getRequestDispatcher("/WEB-INF/jsp/bookdetail.jsp").forward(request, response);
             } catch (BookNotFoundException ex) {

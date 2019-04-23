@@ -19,28 +19,18 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import cart.ShoppingCart;
-import database.BookDB;
-import database.BookDetails;
+import bean.BookDetails;
 import exception.BookNotFoundException;
+import service.BookService;
 
-/**
- * An HTTP servlet that displays the contents of a customer's shopping cart at
- * Duke's Bookstore. It responds to the GET and HEAD methods of the HTTP
- * protocol. This servlet calls other servlets.
- */
 public class ShowCartServlet extends HttpServlet {
 
-    private BookDB bookDB;
+    private BookService bookService;
 
     public void init() throws ServletException {
-        bookDB = (BookDB) getServletContext().getAttribute("bookDB");
-        if (bookDB == null)
-            throw new UnavailableException("Couldn't get database.");
-    }
-
-    public void destroy() {
-        bookDB.remove();
-        bookDB = null;
+        bookService = (BookService)getServletContext().getAttribute("bookService");
+        if (bookService == null)
+            throw new UnavailableException("Couldn't get service.");
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -58,7 +48,7 @@ public class ShowCartServlet extends HttpServlet {
         bookId=request.getParameter("Add");
         if(bookId!=null){
         	 try {
-                 BookDetails book = bookDB.getBookDetails(bookId);
+                 BookDetails book = bookService.getBookDetails(bookId);
                  cart.add(bookId, book);
              } catch (BookNotFoundException ex) {
                  throw new ServletException(ex);

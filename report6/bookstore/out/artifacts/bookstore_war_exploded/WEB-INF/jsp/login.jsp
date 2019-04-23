@@ -18,7 +18,7 @@
 <div class="container">
 
     <form class="form-signin" style="max-width:370px;margin: auto auto;" action="<%=request.getContextPath()%>/login" method="post">
-        <h2 class="form-signin-heading">Please log in</h2>
+        <h2 class="form-signin-heading" style="text-align:center;">Please log in</h2>
         <label class="sr-only">User</label>
         <input type="text" name="username" class="form-control" placeholder="Username" required autofocus>
         <spacer></spacer>
@@ -29,12 +29,13 @@
             if(errmsg!=null){
                 session.removeAttribute("errmsg");
                 %>
-                <div class="alert alert-danger" role="alert">Oops! <%=errmsg%></div>
+                <div class="alert alert-danger" role="alert" style="margin-top: 20px;">Oops! <%=errmsg%></div>
                 <%
             }
         %>
 
-        <button class="btn btn-lg btn-primary btn-block" style="margin-top: 25px;" type="submit">Log in</button>
+        <button class="btn btn-lg btn-primary col-md-4" style="margin-top: 25px;display: inline-block;margin-left: 45px;" type="submit">Log in</button>
+        <a class="btn btn-lg btn-primary col-md-4" style="margin-top: 25px;display: inline-block;margin-left: 25px;" href="/register">Register</a>
     </form>
 
 </div> <!-- /container -->

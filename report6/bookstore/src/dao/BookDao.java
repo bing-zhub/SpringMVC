@@ -1,7 +1,17 @@
 package dao;
 
-import database.BookDetails;
+import bean.BookDetails;
+import bean.OrderDetail;
+import cart.ShoppingCart;
+import cart.ShoppingCartItem;
+import exception.OrderException;
+import mapper.BookDetailMapper;
+import mapper.OrderDetailsMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
+
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
 
 public class BookDao{
     private JdbcTemplate jdbcTemplate;
@@ -23,4 +33,18 @@ public class BookDao{
         jdbcTemplate.update(sql, args);
 
     }
+
+    public List<BookDetails> listAllBooks(){
+        String sql = "select * from books";
+        return this.jdbcTemplate.query(sql, new BookDetailMapper());
+    }
+
+    public BookDetails getBookDetails(String bookId){
+        String sql = "select * from books where id=?";
+        return this.jdbcTemplate.queryForObject(sql, new BookDetailMapper(), bookId);
+    }
+
+
 }
+
+

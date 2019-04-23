@@ -9,7 +9,7 @@
 
 package cart;
 
-import database.BookDetails;
+import bean.BookDetails;
 
 public class ShoppingCartItem {
 	BookDetails item;
